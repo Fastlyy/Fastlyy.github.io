@@ -1,88 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <!-- UTF-8 önerilir (metin/karakter bozulmalarını önler) -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>YMH354 - CSS ile Tasarım Örneği</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enes Ayabakan | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <!-- External CSS (en önerilen yöntem) -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<body>
 
-  <body>
-    <a class="skip-link" href="#content">İçeriğe atla</a>
+<header>
+    <h1>Enes Ayabakan</h1>
+    <p>Computer Science Student</p>
 
-    <header class="site-header">
-      <div class="container header-inner">
-        <h1 class="brand">YMH354</h1>
-        <p class="tagline">Designing with CSS: Layout, Selectors, Box Model</p>
-      </div>
-    </header>
-
-    <nav class="site-nav" aria-label="Ana menü">
-      <div class="container">
-        <ul class="nav-list">
-          <li><a href="#selectors">Selectors</a></li>
-          <li><a href="#layout">Layout</a></li>
-          <li><a href="#boxmodel">Box Model</a></li>
-          <li><a href="#responsive">Responsive</a></li>
-        </ul>
-      </div>
+    <nav>
+        <a href="#about">Hakkımda</a>
+        <a href="#projects">Projeler</a>
+        <a href="#contact">İletişim</a>
     </nav>
+</header>
 
-    <main class="container layout" id="content">
-      <article class="card" id="selectors">
-        <h2>1) Selectors + Pseudo-class</h2>
-        <p>
-          Bu paragraf normal akışta. <span class="badge">.class</span> ve
-          <span id="special">#id</span> örneği içeriyor.
-        </p>
+<section id="about">
+    <h2>Hakkımda</h2>
+    <p>
+        Merhaba, ben Enes. Yazılım geliştirme ve yapay zeka alanlarına ilgi duyuyorum.
+        Bu sayfa projelerimi ve çalışmalarımı sergilemek için hazırlanmıştır.
+    </p>
+</section>
 
-        <p class="note">
-          Linkin üzerine gel: <a href="#selectors">hover örneği</a>
-        </p>
+<section id="projects">
+    <h2>Projeler</h2>
 
-        <button class="btn" type="button">Buton</button>
-      </article>
+    <div class="project">
+        <h3>Proje 1</h3>
+        <p>Bu projede yaptığım şeylerin kısa açıklaması.</p>
+        <a href="#">GitHub</a>
+    </div>
 
-      <aside class="sidebar card" id="layout">
-        <h2>2) Sidebar</h2>
-        <p>
-          Bu alan tipik web sayfası düzenini (header/nav/content/sidebar/footer)
-          göstermeye yarar.
-        </p>
+    <div class="project">
+        <h3>Proje 2</h3>
+        <p>Bu projede kullandığım teknolojiler ve amaç.</p>
+        <a href="#">GitHub</a>
+    </div>
 
-        <div class="callout">
-          <strong>İpucu:</strong> box-sizing: border-box kullanmak hesaplamaları kolaylaştırır.
-        </div>
-      </aside>
+    <div class="project">
+        <h3>Proje 3</h3>
+        <p>Kısa proje açıklaması.</p>
+        <a href="#">GitHub</a>
+    </div>
 
-      <section class="card" id="boxmodel">
-        <h2>3) Box Model Demo</h2>
-        <div class="box-demo">
-          <div class="box">
-            <p>
-              Bu kutu; <em>content</em>, <em>padding</em>, <em>border</em>, <em>margin</em>
-              bileşenlerini görselleştirir.
-            </p>
-          </div>
-        </div>
-      </section>
+</section>
 
-      <section class="card" id="responsive">
-        <h2>4) Responsive (Media Query)</h2>
-        <p>
-          Ekran daraldığında yerleşim tek sütuna düşecek ve menü daha kompakt görünecek.
-          Tarayıcı genişliğini değiştirip gözlemleyin.
-        </p>
-      </section>
-    </main>
+<section id="contact">
+    <h2>İletişim</h2>
+    <p>Email: enes@example.com</p>
+    <p>GitHub: github.com/enes</p>
+</section>
 
-    <footer class="site-footer">
-      <div class="container">
-        <small>© YMH354 Web Design and Programming</small>
-      </div>
-    </footer>
-  </body>
+<footer>
+    <p>© 2026 Enes Ayabakan</p>
+</footer>
+
+</body>
 </html>
