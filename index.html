@@ -1,109 +1,160 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Enes Ayabakan</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enes Ayabakan | Yazılım Mühendisi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
 
-<header class="hero">
+    <div class="glow-point"></div>
+    <div class="background-grain"></div>
 
-<h1>Enes Ayabakan</h1>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">EA<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">Hakkımda</a></li>
+                <li><a href="#education">Eğitim</a></li>
+                <li><a href="#projects">Projeler</a></li>
+                <li><a href="#skills">Yetenekler</a></li>
+                <li><a href="#contact" class="nav-cta">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<p>Computer Science Student</p>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-label">
+                    <span class="pulse-dot"></span> Yazılım Mühendisi Adayı
+                </div>
+                <h1 class="hero-title">Enes <span class="gradient-text">Ayabakan</span></h1>
+                <p class="hero-description">
+                    Ankara Üniversitesi Yazılım Mühendisliği bölümünde eğitim görüyorum. Ağırlıklı olarak Yapay Zeka (AI) ve Görüntü İşleme teknolojileri üzerine çalışıyor, bu alanlarda projeler geliştiriyorum.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-primary">Projeleri Gör</a>
+                </div>
+            </div>
+        </section>
 
-<a href="#projects" class="button">Projelerimi Gör</a>
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="num">01.</span>
+                    <h2>Hakkımda</h2>
+                </div>
+                <div class="glass-card about-content">
+                    <p>Ankara Üniversitesi Yazılım Mühendisliği öğrencisi olarak, makine öğrenmesi ve bilgisayarlı görü dünyasında kendimi geliştiriyorum. Algoritmaları ve teorik bilgileri pratik projelere dönüştürüyor, teknoloji odaklı ve sürdürülebilir çözümler üretmeye odaklanıyorum.</p>
+                </div>
+            </div>
+        </section>
 
-</header>
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="num">02.</span>
+                    <h2>Eğitim</h2>
+                </div>
+                <div class="edu-grid">
+                    <div class="glass-card edu-main">
+                        <i class="fa-solid fa-graduation-cap icon-accent"></i>
+                        <h3>Ankara Üniversitesi</h3>
+                        <p class="accent-text">Yazılım Mühendisliği — Lisans</p>
+                        <span class="date-tag">2023 – 2027</span>
+                    </div>
+                    <div class="glass-card gano-box">
+                        <span class="label">Akademik Başarı</span>
+                        <div class="gano-val">3.65<span>/4.0</span></div>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 91.25%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="num">03.</span>
+                    <h2>Projeler</h2>
+                </div>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="p-image-placeholder"><i class="fa-solid fa-seedling"></i></div>
+                        <div class="p-content">
+                            <span class="p-category">TÜBİTAK Projesi</span>
+                            <h3>Kiraz Kalite Analizi</h3>
+                            <p>Bilgisayarlı görü kullanarak tarımsal verimliliği artıran sınıflandırma sistemi.</p>
+                            <div class="p-tags"><span>Python</span><span>OpenCV</span></div>
+                        </div>
+                    </div>
+                    <div class="project-card featured">
+                        <div class="p-image-placeholder"><i class="fa-solid fa-users"></i></div>
+                        <div class="p-content">
+                            <span class="p-category">Topluluk Platformu</span>
+                            <h3>Becayis.com</h3>
+                            <p>Öğrenciler arası yurt değişim sürecini otomatize eden dinamik web çözümü.</p>
+                            <div class="p-tags"><span>Fullstack</span><span>Node.js</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section class="about">
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="num">04.</span>
+                    <h2>Yetenekler</h2>
+                </div>
+                <div class="skills-flex">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">OpenCV</span>
+                    <span class="skill-tag">Deep Learning</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+            </div>
+        </section>
 
-<h2>Hakkımda</h2>
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="num">05.</span>
+                    <h2>İletişim</h2>
+                </div>
+                
+                <div class="contact-box-glass">
+                    <a href="mailto:enesayabakan070@gmail.com" class="contact-pill email-pill">
+                        <i class="fa-solid fa-envelope"></i>
+                        enesayabakan070@gmail.com
+                    </a>
+                    
+                    <div class="social-links-row">
+                        <a href="https://www.linkedin.com/in/enes-ayabakan-058556341/" target="_blank" class="contact-pill social-pill linkedin">
+                            <i class="fa-brands fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/Fastlyy" target="_blank" class="contact-pill social-pill github">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<p>
-
-Merhaba, ben Enes. Yazılım geliştirme ve yapay zeka alanlarına ilgi duyuyorum.
-Bu sayfa projelerimi ve çalışmalarımı sergilemek için hazırlanmıştır.
-
-</p>
-
-</section>
-
-
-
-<section id="projects" class="projects">
-
-<h2>Projeler</h2>
-
-<div class="project-grid">
-
-<div class="project-card">
-
-<h3>Cherry Classification</h3>
-
-<p>
-
-Image processing kullanarak kirazları boyutlarına göre sınıflandıran
-otomasyon sistemi.
-
-</p>
-
-<a href="#">GitHub</a>
-
-</div>
-
-
-<div class="project-card">
-
-<h3>KYK Room Swap</h3>
-
-<p>
-
-KYK yurt öğrencilerinin oda değişimi yapabilmesi için geliştirilen
-mobil uygulama.
-
-</p>
-
-<a href="#">GitHub</a>
-
-</div>
-
-
-<div class="project-card">
-
-<h3>Crossword AI</h3>
-
-<p>
-
-Yapay zeka destekli crossword puzzle üretme ve çözme sistemi.
-
-</p>
-
-<a href="#">GitHub</a>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-<footer>
-
-<p>© 2026 Enes Ayabakan</p>
-
-</footer>
+    <footer>
+        <p>&copy; 2026 Enes Ayabakan — Kodla Tasarlandı.</p>
+    </footer>
 
 </body>
 </html>
